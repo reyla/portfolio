@@ -27,6 +27,12 @@ ul {
 
 a {
   color: #f38989;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
 }
 
 img {
@@ -129,6 +135,7 @@ img {
   text-align: center;
   font-weight: 700;
   margin-top: 0.25em;
+  line-height: 1.5em;
 }
 
 

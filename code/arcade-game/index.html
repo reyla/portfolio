@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bug Dash!</title>
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <section id="gameboard">
+    </section>
+
+    <section class="score-panel">
+        <div class="help">
+          <i class="fa fa-question-circle" title="Help" id="help-icon"></i>
+        </div>
+
+        <p>Lives: </p>
+        <div id="hearts-list-current">
+          <i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i>
+        </div>
+
+        <p>Points: </p>
+        <div id="points-current">
+          <p>0</p>
+        </div>
+
+        <div class="restart">
+          <i class="fa fa-repeat" title="Restart" id="restart-icon"></i>
+         </div>
+      </section>
+
+      <div id="sidebar">
+        <header>
+            <h1>Bug Dash!</h1>
+        </header>
+
+        <section class="overview">
+          <p>Move your bug from the grass to the water using the arrow keys (or WASD).<br>
+            Collect the gems and watch out for boys!</p>
+          <button id="play-button">Play</button>
+        </section>
+
+        <section class="instructions">
+          <i class="fa fa-times" id="close-icon" title="Close"></i>
+          <h3>How To Play</h3>
+            <ul class="instructions-list">
+              <li>The goal is to get your bug safely across the street to the water while avoiding enemy boys.</li>
+              <li>Use the arrow keys or WASD keys on your keyboard to move your bug around the game board.</li>
+              <li>Try to collect gems along the way to gain points!</li>
+              <li>If your bug collides with any boys, you will reset back to starting position and lose 1 heart.</li>
+              <li>The game ends once you either lose all hearts or reach the water and a popup will show your stats.</li>
+              <li>You can restart the game at any time using the restart icon.</li>
+            </ul>
+        </section>
+
+        <section class="footer">
+          <a href="http://github.com/reyla/arcade-game">View on Github</a>
+          <p class="copyright">Copyright &copy;2018 Kate Speed</p>
+        </section>
+      </div>
+
+      <div id="modal" class="hide">
+        <div class="modal-content">
+          <h3 id="game-result">You win!</h3>
+          <p>Lives:
+              <div id="hearts-list-final">
+                  <i class="fa fa-heart"></i><i class="fa fa-heart"></i><i class="fa fa-heart"></i>
+              </div>
+          </p>
+          <p>Points:
+              <div id="points-final">
+                  <p>0</p>
+              </div>
+          </p>
+          <button id="replay-button">Play again</button>
+        </div>
+      </div>
+
+      <script src="js/resources.js"></script>
+      <script src="js/classes.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/engine.js"></script>
+
+    </div>
+  </body>
+</html>

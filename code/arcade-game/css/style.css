@@ -1,0 +1,211 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: #f7eaf3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #0c2448;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+a {
+    color: #ff6f59;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+/*
+ * Styles for the Overview
+ */
+
+.overview {
+  text-align: center;
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: center;
+    width: 480px;
+}
+
+.score-panel p {
+    display: inline-block;
+    line-height: 1em;
+    font-size: 1em;
+}
+
+.help,
+#hearts-list-current,
+#hearts-list-final,
+#points-current,
+#points-final {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+#hearts-list-current i,
+#hearts-list-final i {
+    margin-right: 10px;
+}
+
+.help,
+.restart {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 1em;
+}
+
+/*
+ * Styles for the Sidebar
+ */
+
+#sidebar {
+     height: 100%;
+     width: 100%;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: /*#0c2448; */ rgba(12, 26, 72, .8);
+     color: #f7eaf3;
+     overflow-x: hidden;
+     padding-top: 60px;
+     border-radius: 8px;
+     transition: 0.6s; /* 0.5 second transition effect to slide in the sidebar */
+ }
+
+ #close-icon {
+     position: absolute;
+     top: 30px;
+     right: 30px;
+     font-size: 36px;
+     margin-left: 50px;
+     cursor: pointer;
+ }
+
+.instructions {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.instructions h3 {
+    text-align: center;
+}
+
+.instructions-list {
+    text-align: left;
+}
+
+.instructions-list li {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/*
+* Styles for the Modal pop-up
+*/
+
+#modal {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+}
+
+.modal-content {
+   background-color: #f7eaf3;
+   margin: 3em auto;
+   padding: 10px;
+   border: 1px solid #f7eaf3;
+   border-radius: 8px;
+   width: 40%;
+   height: 80%;
+   text-align: center;
+   font-weight: 600;
+   box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.8);
+}
+
+#play-button,
+#replay-button {
+   background-color: #1a936f;
+   font-family: 'Roboto', sans-serif;
+   font-size: 20px;
+   font-weight: 400;
+   padding: 1em;
+   border: 1px solid #0c2448;
+   border-radius: 8px;
+}
+
+#play-button:hover,
+#play-button:focus,
+#replay-button:hover,
+#replay-button:focus {
+   cursor: pointer;
+   background-color: #f0d9e9;
+   border: 1px solid #f7eaf3;
+}
+
+.hide {
+   display: none;
+}
+
+/*
+* Styles for the Footer
+*/
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}

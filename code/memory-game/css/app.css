@@ -1,0 +1,229 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7eaf3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #0c2448;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+a {
+    color: #ff6f59;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    width: 660px;
+    min-height: 680px;
+    background-color: #f0d9e9;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: #0c2448;
+    font-size: 0;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #ff6f59;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 33px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #1a936f;
+    font-size: 33px;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+/*
+ * Styles for the Overview
+ */
+
+.overview {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    width: 345px;
+    margin-bottom: 10px;
+}
+
+.stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .clock {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 15px;
+}
+
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+}
+
+/*
+ * Styles for the Instructions
+ */
+
+.instructions h3 {
+  text-align: center;
+}
+
+.instructions-list li {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.back-to-top {
+    text-align: right;
+    cursor: pointer;
+}
+
+ /*
+ * Styles for the Modal pop-up
+ */
+
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+.modal-content {
+    background-color: #f7eaf3;
+    margin: 3em auto;
+    padding: 10px;
+    border: 1px solid #f7eaf3;
+    border-radius: 8px;
+    width: 300px;
+    height: 360px;
+    text-align: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.8);
+}
+
+.winTime,
+.winMoves,
+.winRating {
+    font-weight: 600;
+}
+
+.replay {
+    background-color: #ff6f59;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 1em;
+    border: 1px solid #f7eaf3;
+    border-radius: 8px;
+}
+
+.replay:hover,
+.replay:focus {
+    cursor: pointer;
+    background-color: #f0d9e9;
+}
+
+.hide {
+    display: none;
+}
+
+
+/*
+* Styles for the Footer
+*/
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+}

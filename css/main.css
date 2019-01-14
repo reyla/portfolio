@@ -27,8 +27,6 @@ h2 {
   color: #5caab8;
 }
 
-
-
 a {
   color: #f77070;
   text-decoration: none;
@@ -88,11 +86,58 @@ a:focus {
 }
 
 
+/* ---- Navigation ---- */
+#nav-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+  color: white;
+}
+
+#nav {
+  height: 260px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #1794aa;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.6s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+#nav h3 {
+  margin-left: 20px;
+}
+
+.nav-items {
+  list-style-type: none;
+  line-height: 2em;
+}
+
+.nav-items a {
+  color: white;
+}
+
+#close-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+  color: white;
+}
+
 
 /* ---- Main Content---- */
 
 .content,
-.background {
+#background {
   display: flex;
   align-items: center;
   flex: 1 1 auto;
@@ -106,15 +151,15 @@ a:focus {
   max-width: 1000px;
 }
 
-.background {
+#background {
   padding: 20px;
 }
 
-.background p {
+#background p {
   line-height: 1.5em;
 }
 
-.background {
+#background {
   max-width: 800px;
   padding-bottom: 0;
 }
@@ -151,6 +196,7 @@ a:focus {
 }
 
 .portfolio-left {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -189,14 +235,7 @@ a:focus {
   margin: 0 auto;
 }
 
-.back-to-top {
-  cursor: pointer;
-  color: #f38989;
-  width: 100%;
-  height: 1.5em;
-  text-align: center;
-  padding: 20px 0;
-}
+
 
 
 /* ---- Footer ---- */
@@ -204,6 +243,14 @@ a:focus {
 .footer {
   width: 100%;
   background-color: #1794aa;
+}
+
+.back-to-top {
+  cursor: pointer;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
 }
 
 .links {
@@ -222,7 +269,7 @@ a:focus {
 }
 
 .link-list li {
-  margin: 20px 20px 0;
+  margin: 20px;
 }
 
 .link-list a {
@@ -232,6 +279,7 @@ a:focus {
 .copyright {
   text-align: center;
   padding: 1em;
+  font-size: 14px;
 }
 
 

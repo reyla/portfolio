@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Kate Speed</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/fontawesome/css/all.css">
+  <!--- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous"> -->
 </head>
 
 <body>
@@ -34,31 +35,49 @@
   <main class="main">
     <section class="content">
       <div id="background">
-        <p>I love learning new coding skills. In 2018 I completed the Front End Web Development Nanodegree from
-          Udacity, after receiving the Grow With Google Developer Challenge Scholarship. This course improved my skills
-          in HTML and CSS, and I learned Javascript and React while building simple games and web apps. I also received
-          the Bertelsmann Data Science Scholarship and completed the Business Analytics Nanodgree. This path built
-          skills in Data Analysis, SQL, Python, and Tableau dashboards.</p>
-        <p>I have years of experience in Marketing and always consider the user experience and customer journey. I want
-          to help build apps that make data more accessible and empower users in their local communities.</p>
-        <p>I currently work for a non-profit that creates technology solutions in the public health space. We provide
-          consultancy services for state governments across the U.S. and focus on data collection and synthesis related
-          to tobacco enforcement policies.</p>
-
-        <h2 class="skills-title">Skills Summary</h2>
-        <ul class="skills-bullets">
-          <li>Front End Web Development</li>
-          <li>Business Analytics</li>
-          <li>Data Dashboards</li>
-          <li>Python Scripting</li>
-          <li>Email Marketing</li>
-          <li>Photoshop / Illustrator / InDesign Editing</li>
-          <li>​Process Development</li>
-          <li>Team Management</li>
-        </ul>
+        <p>I love learning new coding skills for web development.</p>
+        <p>I want to build apps that make data more accessible to local communities.</p>
+        <p>I currently work for a non-profit in the public health space.</p>
+        <div class="links">
+          <ul class="link-list">
+            <li><a href="https://www.linkedin.com/in/katespeed/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/reyla/" target="_blank" title="Github"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
       </div>
 
+      <div id="skills">        
+        
+        
+          <h2 class="skills-title">Skills Summary</h2>
+          <div class="skills">
+          <div class="skills-left">
+            <ul class="skills-bullets">
+              <li>Front End Web Development</li>
+              <li>HTML5, CSS3, Javascript</li>
+              <li>React, Ember</li>
+              <li>Wordpress, Squarespace</li>
+              <li>Python Scripting</li>
+            </ul>
+          </div>
+          <div class="skills-right">
+            <ul class="skills-bullets">
+              <li>Business Analytics</li>
+              <li>Email Marketing</li>
+              <li>Photoshop / Illustrator / InDesign</li>
+              <li>​Process Development</li>
+              <li>Team Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
       <div class="portfolio" id="code">
+        
+        
+       
         <h2 class="portfolio-title">Code</h2>
         <div class="portfolio-item">
           <div class="portfolio-left">
@@ -67,23 +86,25 @@
             </figure>
           </div>
           <div class="portfolio-right">
-            <h4 class="portfolio-item-title">Bug Dash! Arcade Game</h4>
+            <h3 class="portfolio-item-title">Bug Dash! Arcade Game</h3>
             <p>Move your bug from the grass to the water using the arrow keys (or WASD). Collect the gems and watch out
               for boys!</p>
             <div class="portfolio-item-details">
-              <div class="view-code">
-                <div class="code-icon"><a href="https://github.com/reyla/arcade-game" target="_blank"><i class="far fa-file-code fa-2x"></i></a></div>
-                <div class="code-link"><a href="https://github.com/reyla/arcade-game" target="_blank">View code on
-                    Github</a></div>
-              </div>
               <div class="play-demo">
-                <div class="code-icon"><a href="http://katespeed.com/code/arcade-game" target="_blank"><i class="fas fa-star fa-2x"></i></div>
-                <div class="code-link"><a href="http://katespeed.com/code/arcade-game" target="_blank">Play Demo</a></div>
+                <a href="http://katespeed.com/code/arcade-game" target="_blank">
+                  <div class="code-icon"><i class="fal fa-play fa-2x"></i></div>
+                  <div class="code-link">Play Demo</div>
+                </a>
               </div>
+              <div class="view-code">
+                  <a href="https://github.com/reyla/arcade-game" target="_blank">
+                    <div class="code-icon"><i class="fal fa-file-code fa-2x"></i></div>
+                    <div class="code-link">View Code</div>
+                  </a>
+                </div>
             </div>
 
-            <p>This game is based off the classic arcade game Frogger where the player must navigate from the bottom of
-              the gameboard to the top without running into enemies.</p>
+            
             <p>Game Features:</p>
             <ul class="features-list">
               <li>control the character using your keyboard</li>
@@ -102,22 +123,23 @@
             </figure>
           </div>
           <div class="portfolio-right">
-            <h4 class="portfolio-item-title">Memory Game</h4>
+            <h3 class="portfolio-item-title">Memory Game</h3>
             <p>Click on the cards to see if they match and try to beat your best time.</p>
             <div class="portfolio-item-details">
-              <div class="view-code">
-                <div class="code-icon"><a href="https://github.com/reyla/memory-game" target="_blank"><i class="far fa-file-code fa-2x"></i></a></div>
-                <div class="code-link"><a href="https://github.com/reyla/memory-game" target="_blank">View code on
-                    Github</a></div>
-              </div>
               <div class="play-demo">
-                <div class="code-icon"><a href="http://katespeed.com/code/memory-game" target="_blank"><i class="fas fa-star fa-2x"></i></div>
-                <div class="code-link"><a href="http://katespeed.com/code/memory-game" target="_blank">Play Demo</a></div>
+                  <a href="http://katespeed.com/code/memory-game" target="_blank">
+                    <div class="code-icon"><i class="fal fa-play fa-2x"></i></div>
+                    <div class="code-link">Play Demo</div>
+                  </a>
+              </div>
+              <div class="view-code">
+                <a href="https://github.com/reyla/memory-game" target="_blank">
+                  <div class="code-icon"><i class="fal fa-file-code fa-2x"></i></div>
+                  <div class="code-link">View Code</div>
+                </a>
               </div>
             </div>
 
-            <p>This is a simple card-matching game where the user can click on cards to see if their icons match. A matched
-              pair stays open and an unmatched pair flips back over. The game is won when all cards have been matched.</p>
             <p>Game Features:</p>
             <ul class="features-list">
               <li>timer that tracks the length of your game</li>
@@ -131,7 +153,10 @@
 
 
         <div id="scholarships">
-          <h2 class="portfolio-title">Scholarships</h2>
+          
+          
+          
+            <h2 class="portfolio-title">Scholarships</h2>
           <div class="portfolio-item">
             <div class="portfolio-left">
               <figure>
@@ -172,13 +197,7 @@
         <div class="back-to-top">
             <i class="fa fa-arrow-up fa-2x" title="Back to top"></i>
         </div>
-      <div class="links">
-        <ul class="link-list">
-          <li><a href="https://www.linkedin.com/in/katespeed/" target="_blank" title="LinkedIn">
-              <i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/reyla/" target="_blank" title="Github"><i class="fab fa-github"></i></a></li>
-        </ul>
-      </div>
+      
       <p class="copyright">Copyright &copy;2019 Kate Speed</p>
     </footer>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

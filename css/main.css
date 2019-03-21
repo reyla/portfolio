@@ -49,6 +49,20 @@ a:focus {
   color: #5caab8;
 }
 
+.image-container {
+  overflow: hidden;
+  margin: 40px;
+}
+
+.image img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.image-container:hover .image img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
 
 /* ---- Header ---- */
 
@@ -245,20 +259,17 @@ a:focus {
   width: 100%;
   margin-bottom: 40px;
   padding-bottom: 40px;
-  
 }
 
 .portfolio-left {
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center;  
 }
 
 .portfolio-image {
   width: 300px;
   margin: 0 auto;
-  
 }
 
 .portfolio-item-title {
@@ -270,14 +281,33 @@ a:focus {
 
 .portfolio-item-details {
   display: inline-flex;
-  justify-content: center;
+  justify-content:normal;
   text-align: center;
   width: 100%;
+}
+
+.spacer {
+  width: 20px;
 }
 
 .view-code,
 .play-demo {
   flex: 1;
+  background-color: #f77070;
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 100px;
+}
+
+.view-code a,
+.play-demo a {
+  color: white;
+  font-weight: 400;
+}
+
+.view-code:hover,
+.play-demo:hover {
+  background-color: #5caab8;
 }
 
 .code-icon {

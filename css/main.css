@@ -70,7 +70,7 @@ a:focus {
   background-color: #1794aa;
   top: 0;
   width: 100%;
-  padding: 0.5em 1em;
+  
 }
 
 .header_inside {
@@ -119,6 +119,9 @@ a:focus {
 #nav-icon {
   font-size: 36px;
   color: white;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
 }
 
 #nav {

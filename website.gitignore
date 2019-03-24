@@ -1,0 +1,9 @@
+# Dependencies
+
+node_modules/
+package.json
+package-lock.json
+
+# VisualStudio workspace
+
+website.code-workspace

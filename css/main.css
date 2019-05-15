@@ -124,7 +124,7 @@ a:focus {
   left: 0.5em;
 }
 
-#nav {
+#mobile-nav {
   position: absolute;
   top: 3em;
   padding: 1em;
@@ -151,7 +151,7 @@ a:focus {
   color: white;
 }
 
-.nav-hidden #nav {
+.nav-hidden #mobile-nav {
   transform: translate3d(-12em, 0, 0);
   transition: transform 0.3s;
 }
@@ -215,11 +215,6 @@ a:focus {
   margin: 0 auto 20px;
 }
 
-.skills-title {
-  flex: 0 0 100%;
-  text-align: center;
-}
-
 .skills-box {
   width: 100%;
   margin-bottom: 40px;
@@ -241,7 +236,7 @@ a:focus {
 
 /* ---- Portfolio ---- */
 
-#code {
+#code, #webdesign, #skills, #scholarships {
   width: 100%;
   padding: 20px;
   max-width: 1000px;
@@ -348,7 +343,7 @@ a:focus {
 
 /* ---- Responsive Design ---- */
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 700px) {
   
   .skills-box,
   .portfolio-item,

@@ -6,7 +6,7 @@
 $(function() {
 
   /** 
-   * clicking on hamburger icon opens the navigation sidebar
+   * clicking on hamburger icon opens or closes the navigation sidebar
    */
   $('#nav-icon').on('click', function() {
     $('body').toggleClass('nav-hidden');

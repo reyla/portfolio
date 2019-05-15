@@ -116,6 +116,10 @@ a:focus {
 
 /* ---- Navigation ---- */
 
+#nav {
+  display: none;
+}
+
 #nav-icon {
   font-size: 36px;
   color: white;
@@ -344,6 +348,19 @@ a:focus {
 /* ---- Responsive Design ---- */
 
 @media screen and (min-width: 700px) {
+  
+  #nav {
+    display: block;
+    background-color: #1794aa;
+    text-align: center;
+  }
+
+  #nav li {
+    display: inline-block;
+    padding: 1em;
+  }
+  
+  
   
   .skills-box,
   .portfolio-item,

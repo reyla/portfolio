@@ -360,6 +360,9 @@ a:focus {
     padding: 1em;
   }
   
+  #nav-icon {
+    display: none;
+  }
   
   
   .skills-box,

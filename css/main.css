@@ -82,17 +82,17 @@ a:focus {
 
 .header_logo {
   display: flex;
-  height: 160px;
-  width: 1000px;
+  height: 125px;
+  width: 640px;
   vertical-align: top;
-  margin: 10px auto;
-  background: url("../img/city2019b.png") no-repeat;
+  margin: 0 auto 10px;
+  background: url("../img/city2019sm5.png") no-repeat;
 }
 
 .header_title {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 3em;
-  margin: 0.5em auto;
+  margin: 0.5em auto 0;
   display: block;
   text-transform: uppercase;
   text-align: center;

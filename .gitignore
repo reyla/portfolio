@@ -8,9 +8,10 @@ package-lock.json
 
 website.code-workspace
 
-# extra images
+# extra image files
 
 img/jason-leung-732100-unsplash.jpg
+img/psd/
 
 # Sensitive content
 

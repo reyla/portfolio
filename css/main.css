@@ -82,11 +82,11 @@ a:focus {
 
 .header_logo {
   display: flex;
-  height: 140px;
-  width: 389px;
+  height: 160px;
+  width: 1000px;
   vertical-align: top;
   margin: 10px auto;
-  background: url("../img/short-city.png") no-repeat;
+  background: url("../img/city2019b.png") no-repeat;
 }
 
 .header_title {

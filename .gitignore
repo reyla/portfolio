@@ -8,6 +8,10 @@ package-lock.json
 
 website.code-workspace
 
+# extra images
+
+img/jason-leung-732100-unsplash.jpg
+
 # Sensitive content
 
 code/tools-map/

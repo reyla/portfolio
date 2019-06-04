@@ -89,6 +89,16 @@ a:focus {
   margin: 0 auto;
 }
 
+.home-link {
+  color: #0c2448;
+  font-weight: 400;
+}
+
+.home-link:focus,
+.home-link:hover {
+  color: white;
+}
+
 .header_title {
   font-weight: 400;
   font-size: 3em;
@@ -97,10 +107,6 @@ a:focus {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 4px;
-}
-
-.header_title_left {
-  color: #fff;
 }
 
 .header_title_byline {

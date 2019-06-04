@@ -81,12 +81,12 @@ a:focus {
 }
 
 .header_logo {
-  display: flex;
+  display: block;
   height: 125px;
   width: 640px;
-  vertical-align: top;
-  margin: 0 auto 10px;
-  background: url("../img/city2019sm5.png") no-repeat;
+  max-width: 100%;
+  object-fit: cover; /* this forces image to cut off instead of shrink */
+  margin: 0 auto;
 }
 
 .header_title {

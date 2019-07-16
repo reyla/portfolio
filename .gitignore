@@ -4,15 +4,23 @@ node_modules/
 package.json
 package-lock.json
 
+
 # VisualStudio workspace
 
 website.code-workspace
 
-# extra image files
+
+# large image files
 
 img/jason-leung-732100-unsplash.jpg
 img/psd/
 
+
 # Sensitive content
 
 code/tools-map/
+
+
+# Branding
+
+css/colors.PNG

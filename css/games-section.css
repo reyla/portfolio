@@ -1,0 +1,41 @@
+/* code games */
+
+
+.view-code,
+.play-demo {
+  flex: 1;
+  background-color: #457b9d;
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 100px;
+}
+
+.view-code a,
+.play-demo a {
+  color: #f1faee;
+  font-weight: 400;
+}
+
+.view-code:hover,
+.play-demo:hover {
+  background-color: #a8dadc;
+}
+
+.code-icon {
+  margin-bottom: 10px;
+}
+
+.features-list {
+  margin: 0 auto;
+}
+
+.portfolio-item-details {
+  display: inline-flex;
+  justify-content:normal;
+  text-align: center;
+  width: 100%;
+}
+
+.spacer {
+  width: 20px;
+}

@@ -284,46 +284,6 @@ a:focus {
   line-height: 1.5em;
 }
 
-.portfolio-item-details {
-  display: inline-flex;
-  justify-content:normal;
-  text-align: center;
-  width: 100%;
-}
-
-.spacer {
-  width: 20px;
-}
-
-.view-code,
-.play-demo {
-  flex: 1;
-  background-color: #457b9d;
-  border-radius: 8px;
-  padding: 15px;
-  max-width: 100px;
-}
-
-.view-code a,
-.play-demo a {
-  color: #f1faee;
-  font-weight: 400;
-}
-
-.view-code:hover,
-.play-demo:hover {
-  background-color: #a8dadc;
-}
-
-.code-icon {
-  margin-bottom: 10px;
-}
-
-.features-list {
-  margin: 0 auto;
-}
-
-
 
 
 /* ---- Footer ---- */
@@ -346,23 +306,6 @@ a:focus {
   padding: 1em;
   font-size: 14px;
   color: #f1faee;
-}
-
-
-/* fancy slide-in effect */
-
-.come-in-sideways {
-  transform: translateX(300px);
-  animation: come-in 0.8s ease forwards;
-}
-
-.come-in-upwards {
-  transform: translateY(200px);
-  animation: come-in 0.8s ease forwards;
-}
-
-@keyframes come-in {
-  to { transform: translateY(0); }
 }
 
 

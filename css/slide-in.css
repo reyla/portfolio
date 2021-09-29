@@ -1,0 +1,17 @@
+
+/* fancy slide-in effect */
+
+.come-in-sideways {
+  transform: translateX(300px);
+  animation: come-in 0.8s ease forwards;
+}
+
+.come-in-upwards {
+  transform: translateY(200px);
+  animation: come-in 0.8s ease forwards;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+

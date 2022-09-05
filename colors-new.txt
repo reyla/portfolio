@@ -1,0 +1,7 @@
+dark blue #101b38
+med blue #0a6a7f
+light blue #42b1b3
+orange #eb5228
+off-white #f9e29f
+almost white #f1faee
+

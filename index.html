@@ -7,19 +7,15 @@
     <title>Kate Speed</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
-    <!--- <link rel="stylesheet" href="css/fontawesome/css/all.css" /> -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
     
   </head>
 
-  <body class="nav-hidden">
+  <body>
     <header class="header">
-        <a href="#" id="nav-icon">
-            <i class="fas fa-bars"></i>
-          </a>
       <div class="header_inside">
-        <a href="index.html" class="home-link"><h1 class="header_title">Kate Speed</h1></a>
-        <img src="img/city-dkblue.png" class="header_logo" alt="cyclopean city">
+        <h1 class="header_title">Kate Speed</h1>
+        <img src="img/doodle-med-400.png" class="doodle" alt="doodle drawing colored in">
         <p class="header_title_byline">Superhero In Training</p>
       </div>
     </header>
@@ -27,18 +23,48 @@
     <nav id="nav">
       <ul class="nav-items">
         <li><a href="#skills" id="nav-link1">Skills</a></li>
-        <li><a href="#webdesign">Web Design</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#courses">Courses</a></li>
+        <li class="social-icon">
+              <a
+                href="https://www.linkedin.com/in/katespeed/"
+                target="_blank" rel="noopener noreferrer" 
+                title="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i
+
+              ></a>
+            </li>
       </ul>
     </nav>
     <main class="main">
       <section class="content">
-        <div id="background">
+      <div id="background">
+        <div class="profile-box">
+            <div class="profile-left">
+              <div class="image-container">
+              
+                 <img
+                    class="profile-image"
+                    src="img/kate.jpg"
+                    alt="Kate"
+                  />
+                
+              </div>
+            </div>
+            <div class="profile-right module-side">
+              
           <p>I am a technologist that enjoys building websites and learning about usability and accessibility. I love working with developers on feature specifications and testing.
           </p>
           <p>I work at Counter Tools, a non-profit that supports public health departments in their work to create healthier, more equitable communities.</p>
           
+            </div>
         </div>
+    
+      </div>
+
+
+        
 
         <div id="skills">
           <h2 class="title">Skills</h2>
@@ -47,7 +73,7 @@
               <ul class="skills-bullets">
                 <li>Front End Web Development</li>
                 <li>HTML5, CSS3, Javascript</li>
-                <li>Accessibility</li>
+                <li>Accessibility Expertise</li>
                 <li>Quality Assurance</li>
               </ul>
             </div>
@@ -61,8 +87,8 @@
             </div>
           </div>
         </div>
-        <div id="webdesign">
-          <h2 class="title">Web Design</h2>
+        <div id="portfolio">
+          <h2 class="title">Portfolio</h2>
           
           <!-- Portfolio Item Start -->
           <div class="portfolio-item">
@@ -227,41 +253,13 @@
       </section>
 
       <footer class="footer">
-        <div class="links">
-          <ul class="link-list">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/katespeed/"
-                target="_blank" rel="noopener noreferrer" 
-                title="LinkedIn"
-              >
-                <i class="fab fa-linkedin"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/reyla/"
-                target="_blank" rel="noopener noreferrer" 
-                title="Github"
-                ><i class="fab fa-github"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
         <div class="back-to-top">
           <i class="fa fa-arrow-up fa-2x" title="Back to top"></i>
         </div>
 
-        <p class="copyright">Copyright &copy;2021 Kate Speed</p>
+        <p class="copyright">Copyright &copy;2022 Kate Speed</p>
       </footer>
-      <nav id="mobile-nav">
-        <ul class="nav-items">
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#webdesign">Web Design</a></li>
-          <li><a href="#courses">Courses</a></li>
-        </ul>
-      </nav>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="js/script.js"></script>
     </main>
   </body>

@@ -19,13 +19,13 @@ h1, h2 {
   font-family: 'Montserrat', sans-serif;
   margin: 0 0 40px;
   padding: 0;
-  letter-spacing: 2px;
+  letter-spacing: .25em;
 }
 
 h3, h4, h5, h6 {
   margin: 0 0 20px;
   padding: 0;
-  letter-spacing: 3px;
+  letter-spacing: .25em;
 }
 
 h1 {
@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-  color: #457b9d;
+  color: #0a6a7f;
 }
 
 h3 {
@@ -41,14 +41,15 @@ h3 {
 }
 
 a {
-  color: #d63946;
+  color: #eb5228;
   text-decoration: none;
   font-weight: 600;
 }
 
 a:hover,
 a:focus {
-  color: #457b9d;
+  color: #0a6a7f;
+  text-decoration: underline;
 }
 
 .image-container {
@@ -69,51 +70,40 @@ a:focus {
 /* ---- Header ---- */
 
 .header {
-  background-color: #457b9d;
-  top: 0;
+  background-color: #101b38;
   width: 100%;
 }
 
 .header_inside {
-  width: 100%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 0;
 }
 
-.header_logo {
+.doodle {
   display: block;
-  height: 125px;
-  width: 640px;
+  height: 300px;
+  width: 400px;
   max-width: 100%;
-  object-fit: cover; /* this forces image to cut off instead of shrink */
   margin: 0 auto;
 }
 
-.home-link {
-  color: #1d3557;
-  font-weight: 400;
-}
-
-.home-link:focus,
-.home-link:hover {
-  color: #f1faee;
-}
-
 .header_title {
+  color: #f1faee;
   font-weight: 400;
   font-size: 3em;
   margin: 0.5em auto 0;
   display: block;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: .25em;
 }
 
 .header_title_byline {
   font-weight: 400;
   font-size: 1.25em;
-  color: #a8dadc;
+  color: #42b1b3;
   letter-spacing: .25em;
   text-transform: uppercase;
   text-align: center;
@@ -122,52 +112,34 @@ a:focus {
 
 /* ---- Navigation ---- */
 
-#nav {
-  display: none;
-}
 
-#nav-icon {
-  font-size: 36px;
-  color: #f1faee;
-  position: absolute;
-  top: 0.5em;
-  left: 0.5em;
-}
-
-#mobile-nav {
-  position: absolute;
-  top: 3em;
-  padding: 1em;
-  width: 10em;
-  transform: translate3d(0, 0, 0);
-  transition: transform 0.3s;  
-  height: 200px;
-  background-color: #457b9d;
-}
 
 .nav-items {
   list-style: none;
   line-height: 2em;
-  padding: 0;
+  padding: 1em 0;
   margin: 0;
+  font-size: 22px;
+  text-align: center;
+  background-color: #42b1b3;
 }
 
+.nav-items li {
+    padding-top: .5em;
+}
 
 .nav-items a {
-  color: #1d3557;
-  font-weight: 400;
+  color: #101b38;
+  font-weight: 800;
 }
 
 .nav-items a:hover {
   color: #d63946;
 }
 
-
-.nav-hidden #mobile-nav {
-  transform: translate3d(-12em, 0, 0);
-  transition: transform 0.3s;
+.social-icon {
+  font-size: 34px;
 }
-
 
 /* ---- Main Content---- */
 
@@ -177,14 +149,13 @@ a:focus {
   align-items: center;
   flex: 1 1 auto;
   flex-wrap: wrap;
-  
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto 40px;
+  max-width: 1200px;
+  margin: 20px auto;
 }
 
 #background {
-  max-width: 600px;
+  max-width: 800px;
   text-align: center;
   padding: 20px;
 }
@@ -194,27 +165,26 @@ a:focus {
   margin: 20px auto;
 }
 
-
-/* ---- Social Links ---- */
-
-.links {
+.profile-box {
   width: 100%;
-  max-width: 800px;
+  display: flex;
+}
+
+.profile-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.profile-image {
+  width: 300px;
   margin: 0 auto;
-  text-align: center;
+  border-radius: 50%;
 }
 
-.link-list {
-  display: inline-flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
-.link-list li {
-  margin: 20px;
-  font-size: 34px;
-  line-height: 40px;
+.title {
+    text-align: center;
 }
 
 
@@ -229,6 +199,7 @@ a:focus {
 
 .skills-box {
   width: 100%;
+  display: flex;
   margin-bottom: 40px;
   padding-bottom: 40px;
 }
@@ -240,25 +211,22 @@ a:focus {
 }
 
 .skills-bullets {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 0;
   line-height: 1.5em;
 }
 
 
-
 /* ---- Portfolio ---- */
 
-#code, #webdesign, #skills, #scholarships {
+#portfolio, #skills, #courses {
   width: 100%;
   padding: 20px;
   max-width: 1000px;
-  margin: 0 auto 40px;  
+  margin: 0 auto 40px; 
+  
 }
 
-.title {
-  flex: 0 0 100%;
-  text-align: center;
-}
+
 
 .portfolio-item {
   width: 100%;
@@ -290,7 +258,7 @@ a:focus {
 
 .footer {
   width: 100%;
-  background-color: #457b9d;
+  background-color: #101b38;
 }
 
 .back-to-top {
@@ -309,14 +277,16 @@ a:focus {
 }
 
 
-/* ---- Responsive Design ---- */
+/* ---- Wide Width Responsive Design ---- */
 
 @media screen and (min-width: 700px) {
   
   #nav {
     display: block;
-    background-color: #a8dadc;
-    text-align: center;
+  }
+
+  .nav-items {
+      padding: 0;
   }
 
   #nav li {
@@ -324,11 +294,9 @@ a:focus {
     padding: 1em;
   }
   
-  #nav-icon {
-    display: none;
-  }
   
-  
+  #background, 
+  .profile-box,
   .skills-box,
   .portfolio-item,
   .portfolio-item img {
@@ -336,7 +304,7 @@ a:focus {
     justify-content: center;
   }
   
-  .portfolio-right {
+  .portfolio-right, .profile-right {
     flex-grow: 2; /* text area will grow */
   }
 
